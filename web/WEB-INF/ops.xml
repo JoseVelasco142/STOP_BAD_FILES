@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OPERATIONS>
+    <OPERATION>
+        <KEY>auth</KEY>
+        <NAME>Authentication</NAME>
+    </OPERATION>
+     <OPERATION>
+        <KEY>getfiles</KEY>
+        <NAME>FileList</NAME>
+    </OPERATION>
+    <OPERATION>
+        <KEY>getInfo</KEY>
+        <NAME>Information</NAME>
+    </OPERATION>
+    <OPERATION>
+        <KEY>download</KEY>
+        <NAME>Download</NAME>
+    </OPERATION>
+    <OPERATION>
+        <KEY>delete</KEY>
+        <NAME>Delete</NAME>
+    </OPERATION>
+</OPERATIONS>

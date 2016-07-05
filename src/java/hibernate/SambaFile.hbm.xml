@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class catalog="stop_bad_files" name="hibernate.SambaFile" optimistic-lock="version" table="files">
+    <id name="idFile" type="int">
+      <column name="idFile"/>
+      <generator class="increment"/>
+    </id>
+     <property name="filename" type="string">
+         <column name="filename" length="120" not-null="true" />
+    </property>
+    <property name="size" type="string">
+        <column name="size" length="20" not-null="true" />
+    </property>
+    <property name="state" type="int">
+        <column name="state" not-null="true" />
+    </property>
+    <property name="owner" type="string">
+        <column name="owner" length="20" not-null="true" />
+    </property>
+    <property name="datetime" type="timestamp">
+        <column name="datetime" length="19" not-null="true" />
+    </property>
+    <property name="UUID" type="string">
+       <column name="UUID" length="50" not-null="true" />
+    </property>
+    <property name="report" type="string">
+       <column name="report" length="500" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

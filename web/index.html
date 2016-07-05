@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--response.setContentType("application/json");
+Writer w = response.getWriter();
+w.append("... your json here ....");-->
+<html>
+     <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script>
+            $( document ).ready(function() {
+                $('#sendLogin').click(function(){
+                    SBF.prototype.login();
+                });
+                $("#password").keypress(function(e) {
+                    if(e.which === 13) 
+                        SBF.prototype.login();
+                });
+            });
+        </script>
+    </head>
+    <body id="loader" class="well-lg">
+        <div id="login" class="col-xs-offset-4 col-xs-4 well">
+            <div id="accessDenied" class="alert-danger"></div>
+            <ul>               
+                <li class="col-xs-10 title"> Login </li>
+                <li>
+                    <input class="col-xs-10 input-lg" type="text" id="username" placeholder="username" value="root"/>
+                </li>            
+                <li> 
+                    <input class="col-xs-10 input-lg" type="password" id="password" placeholder="password" value="departamento"/>
+                </li>                
+                <li>
+                    <button class="col-xs-10 btn btn-info" id="sendLogin" data-loading-text="Connecting..." data-retry-text="Try again...">Login</button>
+                </li>                
+            </ul>
+            <div style="clear: both"></div>
+        </div>
+    </body>
+</html>
+

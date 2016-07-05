@@ -1,0 +1,136 @@
+
+/* 
+    Created on : 06-mar-2016, 19:54:28
+    Author     : jose
+*/
+/* LOGIN PAGE */
+#login {
+    margin-top: 7.5%;
+    padding: 1%;
+    border-radius: 25px;
+    border: 1px solid black;
+}
+
+#login ul {
+    list-style: none;
+}
+
+#login li.title {
+    padding: 1%;
+    font-size: 125%;
+    color: black;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 5%;
+}
+#login li input {
+    margin-bottom: 5%;
+}
+
+/* MAIN PAGE */
+    /* NAVBAR */
+    #title {
+        font-size: 300%;
+        color: white;
+        margin-top: 0.5%;
+    }
+
+    #session {
+        margin-top: 0.5%;
+        color: red;
+        font-size: 200%;
+    }
+    #session small {
+        color: white;
+        font-size: 75%!important;
+    }
+
+    #logout {
+        margin-top: 0.5%;
+    }
+    /* TAB HEADER */
+    #header div {
+        background: black;
+        height: 50px;
+    }
+    #header div .pager {
+        margin: 9px 0;
+        padding-left: 5px;
+    }
+    #header div a {
+        text-decoration: none;
+        font-size: 150%;
+        color: white;
+        font-weight: 900;
+        padding-top: 5%;
+    }
+    
+    /* TAB ROWS */
+    .mix {
+        border: solid black;
+        border-width: 0 1px 2px 1px;
+        padding: 0.25%;
+        margin: 0.25% 0 0.25% 0;
+        display: none;
+    }
+
+    .mix:hover {
+            border-width: 0 8px 2px 8px;
+    }
+
+    .mix div {
+        font-size: 125%;
+        font-weight: 600;
+    }
+
+
+    .state0 {
+        background: lightyellow;
+    }
+
+    .state1 {
+        background: lightgreen;
+    }
+
+    .state2 {
+        background: lightcoral;
+    }
+    .state3 {
+        background: lightblue;
+    }
+
+    /* FILE INFO */
+    #fileViewer {
+        opacity: 0;
+        padding: 3%;
+        border: 1px solid black;
+        border-radius: 25px;
+        background: lightgrey;
+    }
+    #fileViewer .info-block {
+        margin-bottom: 0.5%;
+    }
+    #fileViewer div .title {
+        padding: 2%;
+        font-size: 150%;
+        font-weight: 600;
+        border-radius: 10px;
+        background: grey;
+    }
+    #fileViewer div .file-info {
+        padding: 2%;
+        font-size: 150%;
+        font-weight: 600;
+        border-radius: 10px;
+        background: #F2F2F2;
+    }
+    #viewReport {
+        text-align: center;
+        min-height: 150px;
+        padding: 1.5%;
+    }
+    
+    #viewDelete, #viewClose {
+        border: 1px solid black;
+        margin-top:2.5%;    
+    }
